@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Client Side Web Form Validation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/style.css" />
+	<meta charset="UTF-8">
+	<title>Client Side Web Form Validation - 1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../styles/style.css" />
 </head>
 <body>
-    <main>
-        <h1>Client Side Web Form Validation</h1>
-        <div class="form-wrapper">
-            <form id="form" action="form-action.html" method="get">
-                <div>
-                    <label for="firstName">Name</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="e.g. Jhon Doe" required>
-                </div>
-                <div>
-                    <label for="phoneNumber">Phone number</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="e.g. 598 99 123 456" required>
-                </div>
-                <div>
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="e.g. my.email@example.com" required>
-                </div>
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <button type="submit">Send your info</button>
-            </form>
-        </div>
-    </main>
+	<main>
+		<h1>Client Side Web Form Validation</h1>
+		<div class="form-wrapper">
+			<form id="form" action="../form-action/form-action.html" method="get">
+				<div>
+					<label for="firstName">Name</label>
+					<input type="text" id="firstName" name="firstName" placeholder="e.g. Jhon Doe" required>
+				</div>
+				<div>
+					<label for="phoneNumber">Phone number</label>
+					<input type="tel" id="phoneNumber" name="phoneNumber" placeholder="e.g. 598 99 123 456" required>
+				</div>
+				<div>
+					<label for="email">Email Address</label>
+					<input type="email" id="email" name="email" placeholder="e.g. my.email@example.com" required>
+				</div>
+				<div>
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" minlength="6" required>
+				</div>
+				<button type="submit">Send your info</button>
+			</form>
+		</div>
+	</main>
 </body>
 </html>
